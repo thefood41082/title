@@ -1,0 +1,338 @@
+body,ul,h1,p,div,section {
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'yawaraka';
+    src: url(../font/yawarakafont.ttf);
+}
+body .wrap{
+    font-family: 'yawaraka',Arial, Helvetica, sans-serif;
+}
+h3{
+    text-align:center;
+}
+
+/* チャレンジ 3-1 ローディングアニメーションをつけよう */
+
+/* チャレンジ 2-1 背景を動画に変えてみよう */
+
+/* ここからヘッダー */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+header nav ul {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    color: #0079c2;
+    background: #00ada9;
+}
+
+header nav ul li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 8vw;
+    font-size: 13px;
+}
+
+/* チャレンジ 1-1 cssホバーアニメーションをつけよう */
+
+
+.cursor:hover {
+    cursor: pointer;
+}
+
+main {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    padding-top: 40px;
+    min-height : calc(100vh - 40px);
+    width: 100%;
+    scroll-snap-align: start;
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center center;
+
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+}
+
+
+/* section1 */
+/* 1枚目のページ */
+
+/* 1-5　background-imageを使って背景に画像を入れよう */
+section.first-page{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0c/Shirokane_Takanawa_station.jpg);
+}
+
+section.first-page > h1 {
+    width: 100%;
+    height: calc(100vh - 40px);
+    text-align: center;
+    line-height: 100vh;
+      font-size: 500%;
+}
+
+section.first-page > h1 > img{
+    width: 70%;
+    max-width: 700px;
+}
+/* section1 */
+
+
+/* section2 */
+/* 2枚目のページ */
+
+section.second-page {
+    background: #fff;
+}
+
+section.second-page div.second-contents {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 2.8em;
+    max-width: 1200px;
+}
+
+section.second-page div.second-contents div.js-slide-container {
+    display: flex;
+    margin: 0 auto;
+    height: 600px;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 600px;
+}
+
+section.second-page div.second-contents div.js-slide-container ul {
+    width: 400px;
+    height: 600px;
+}
+
+section.second-page div.second-contents div.js-slide-container ul li{
+
+    width: 100%;
+    height: 100%;
+}
+
+section.second-page div.second-contents div.js-slide-container ul li img {
+    height: 100%;
+}
+
+section.second-page div.second-contents div.js-slide-container span {
+    display: block;
+    width: 20px;
+}
+section.second-page div.second-contents p {
+    width: 480px;
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+}
+/* section2 */
+
+
+
+
+
+/* section3 */
+/* 3枚目のページ */
+
+/* 3-1　background-imageを使って背景に画像を入れよう */
+
+section.third-page div.third-contensts {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    margin-top: 40px;
+}
+.menu{
+    width: 800px;
+    height: 500px;
+}
+
+
+/* menuのリスト */
+.ulreset{
+    list-style: none;
+}
+.price{
+    padding-top: 20px;
+}
+.titleborder{
+    border-bottom: solid 2px#fff;
+}
+ul.price-flex{
+    width: 100%;
+}
+ul.price-flex ul{
+    display: flex;
+}
+ul.price-flex ul.ul01{
+    border-bottom: 0;
+}
+ul.price-flex ul li{
+    flex-grow: 1;
+    width: 5%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+ul.price-flex ul li:last-child{
+    border-right: none;
+}
+ul.price-flex ul.ul01 li{
+    background-color: #ffeaea;
+}
+ul.price-flex ul.ul01 li.li01{
+    background-color: #ffffff00;
+}
+
+.kind2{
+    padding-top: 100px;
+}
+/* section3 */
+
+
+
+
+/* section4 */
+
+section.forth-page {
+    background: #fff;
+    vertical-align: middle;
+}
+
+section.forth-page div.forth-contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 2.8em;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 100px;
+
+}
+section.forth-page div.forth-contents div iframe {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+section.forth-page div.forth-contents div.cafe-information ul {
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+    list-style: none;
+    text-align: center;
+
+}
+
+section.forth-page div.forth-contents div.cafe-information ul li {
+    line-height: 30px;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+section.forth-page div.forth-contents div.cafe-information ul li.address {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+section.forth-page div.forth-contents div.cafe-information ul li.tel {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+section.forth-page div.forth-contents div.cafe-information ul li.sns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+section.forth-page div.forth-contents div.cafe-information ul li.sns a img {
+    width: 40px;
+
+}
+/* section4 */
+
+
+
+/* section5 */
+/* ここから５ページ目 */
+
+section.fifth-page {
+    padding: 0;
+    background: #fff;
+}
+section.fifth-page div.fifth-contents {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 100vh;
+}
+section.fifth-page div.fifth-contents div.col {
+    margin-top: 60px;
+    width: 32%;
+    min-height: calc(100% - 40px);
+}
+
+section.fifth-page div.fifth-contents div.col img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+/*　修正　*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu {
+    height: auto;
+}
+
+section.third-page div.third-contensts {
+    margin-top: 40px;
+    width: 100%;
+}
+section.third-page {
+    display: block;
+}
+
+section.forth-page div.forth-contents {
+    margin-top: 0px;
+}
