@@ -1,0 +1,119 @@
+//////////////で囲まれている文章をコピー&ペースとしてね
+
+
+
+------ 2-2 <p>タグを使って文章を入れよう ------
+//////////////////////////////////////////////
+吉祥地駅から徒歩5分の場所にある「Litacafe」<br>
+店内は懐かしさと温もりにあふれ、スイーツや軽食を楽しみながらゆったりとくつろぐことができます。<br>
+カフェラテやエスプレッソなどの本格的なコーヒーメニューだけではなく、香り高い紅茶もオススメの一品。<br>
+ご一緒に手作りチーズケーキやシフォンケーキなどのスイーツもご用意しています。<br>
+おひとりさまでも、デートでも、気軽にお越しください。<br>
+お待ちしております！
+//////////////////////////////////////////////
+
+
+------ 3-1 リストを使ってメニューを作ろう ------
+//////////////////////////////////////////////
+<ul class="price-flex ulreset">
+    <li class="kind">
+        <ul class="ul01 ulreset">
+            <li class="li01 titleborder">Coffee</li>
+        </ul>    
+    </li>
+    <li class="price">
+        <ul class="ulreset">
+            <li class="li01">Espresso</li>
+            <li class="li02">270</li>
+            <li class="li03">300</li>
+            <li class="li04">340</li>
+        </ul>
+        <ul class="ulreset">
+            <li class="li01">Americano</li>
+            <li class="li02">270</li>
+            <li class="li03">300</li>
+            <li class="li04">340</li>
+        </ul>
+        <ul class="ulreset">
+            <li class="li01">Cappuccino</li>
+            <li class="li02">270</li>
+            <li class="li03">300</li>
+            <li class="li04">340</li>
+            </ul>
+        <ul class="ulreset">
+            <li class="li01">Latte</li>
+            <li class="li02">270</li>
+            <li class="li03">300</li>
+            <li class="li04">340</li>
+        </ul>
+    </li>
+
+    <li class="kind2">
+            <ul class="ul01 ulreset">
+                <li class="li01 titleborder">Tea</li>
+            </ul>    
+    </li>
+    <li class="price">
+        <ul class="ulreset">
+            <li class="li01">Hot Tea</li>
+            <li class="li02">270</li>
+            <li class="li03">300</li>
+            <li class="li04">340</li>
+        </ul>
+        <ul class="ulreset">
+            <li class="li01">Iced Tea</li>
+            <li class="li02">270</li>
+            <li class="li03">300</li>
+            <li class="li04">340</li>
+        </ul>
+    </li>
+
+    <li class="kind2">
+        <ul class="ul01 ulreset">
+            <li class="li01 titleborder">Not Coffee</li>
+        </ul>    
+    </li>
+</ul>
+//////////////////////////////////////////////
+
+
+------ 4-1 地図をうめこもう ------
+//////////////////////////////////////////////
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.825646062215!2d139.576723151283!3d35.70590793612761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018efa4da33e9d1%3A0xd7dc80dccd925ca2!2zTElUQUxJQ0_jg6_jg7Pjg4Djg7wg5ZCJ56Wl5a-6!5e0!3m2!1sja!2sjp!4v1562567414442!5m2!1sja!2sjp" width="450" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+//////////////////////////////////////////////
+
+
+------ 4-2 リストを使って情報を並べてみよう ------
+//////////////////////////////////////////////
+<ul>
+    <li class="address">
+        東京都武蔵野市吉祥寺本町 <br>
+        １丁目１０−８ 大石ビル3F
+    </li>
+    <li class="opening-hour">
+        <span class="type">Cafe</span>
+        <span class="time">9:30−20:00</span>
+        <span class="last-order">（19:00 L.O.）</span>
+    </li>
+    <li class="opening-hour">
+        <span class="type">Lunch</span>
+        <span class="time">11:30−16:00</span>
+        <span class="last-order">（15:00 L.O.）</span>
+    </li>
+    <li class="opening-hour">
+        <span class="type">Dinner</span>
+        <span class="time">18:00−20:00</span>
+        <span class="last-order">（19:00 L.O.）</span>
+    </li>
+    <li class="tel">tel : 0422-23-7144</li>
+    <li class="email" >email : litacafe@cafe.com</li>
+    <li class="sns">
+        <a><img src="./images/icons/sns-twitter.png" alt="twitterロゴ"></a>
+        <a><img src="./images/icons/sns-instagram.png" alt="instagramロゴ"></a>
+        <a><img src="./images/icons/sns-facebook.png" alt="facebookロゴ"></a>
+        <a><img src="./images/icons/sns-youtube.png" alt="youtubeロゴ"></a>
+    </li>
+</ul>
+//////////////////////////////////////////////
