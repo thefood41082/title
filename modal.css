@@ -1,0 +1,60 @@
+/* モーダルウィンドウ全体のCSS */
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	transition: .6s;
+}
+/* モーダル表示させるために必要なCSS */
+.modal.is-show {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* モーダルウィンドウの本体のCSS */
+.modal-inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	max-width: 600px;
+	padding: 50px;
+	background-color: #fff;
+	z-index: 2;
+}
+
+/* 閉じるボタンのCSS */
+.modalClose-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* 閉じるボタンのバッテンの大きさと色 */
+.modalClose-btn i {
+	font-size: 20px;
+	color: #333;
+}
+
+/* モーダルウィンドウの背景の色 */
+.modal-background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	z-index: 1;
+	cursor: pointer;
+}
