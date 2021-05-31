@@ -55,6 +55,12 @@ window.onload = ()=> {
   toFifthPageButton.addEventListener('click',scrollToTarget,false);
   toFifthPageButton.eventParam = "js-fifth-page";
 
+  const toTitlePageButton = document.getElementById("js-toTitlePage");
+  //ボタンがクリックされた際に実行する関数を登録
+  toTitlePageButton.addEventListener('click',gotowebsite,false);
+  //関数に渡すイベントパラメータを設定
+  toTitlePageButton.eventParam = "js-title-page";
+  
   //引数で指定されたエレメントまでスクロールさせる関数
   function scrollToTarget(event){
     //イベントパラメータを元に遷移先のエレメントを取得
