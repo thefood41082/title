@@ -82,7 +82,7 @@ section {
 
 /* 1-5　background-imageを使って背景に画像を入れよう */
 section.first-page{
-  background-image: url(https://i.imgur.com/DudjBwY_d.webp?maxwidth=760&fidelity=grand);
+  background-image: url(https://i.imgur.com/eMSO9c9_d.webp?maxwidth=760&fidelity=grand);
 }
 
 section.first-page > h1 {
